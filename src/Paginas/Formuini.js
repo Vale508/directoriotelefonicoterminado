@@ -23,7 +23,7 @@ const Formuini = () => {
 
     try {
       setCargando(true);
-      const respuesta = await fetch('http://localhost:8080/api/inisesion', {
+      const respuesta = await fetch('apidirectoriotelefonicoterminado.vercel.app/api/inisesion', {
   method: 'POST',
   headers: { 'Content-Type': 'application/json' },
   body: JSON.stringify(datos),
