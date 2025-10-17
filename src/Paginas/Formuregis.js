@@ -21,7 +21,7 @@ const Formuregis = () => {
     const datos = { nombre, correo, contrasena };
 
     try {
-      const respuesta = await fetch('http://localhost:8080/api/registro', {
+      const respuesta = await fetch('apidirectoriotelefonicoterminado.vercel.app/api/registro', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(datos),
