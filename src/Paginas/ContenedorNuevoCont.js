@@ -26,7 +26,7 @@ function ContenedorNuevoCont() {
     e.preventDefault();
 
     try {
-      const response = await fetch('http://localhost:8080/api/contactos', {
+      const response = await fetch('apidirectoriotelefonicoterminado.vercel.app/api/contactos', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         credentials: 'include',
