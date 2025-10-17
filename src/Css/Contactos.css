@@ -1,0 +1,105 @@
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contacto-card {
+    display: flex;
+    align-items: center;
+    background: #d4daff;
+    border-radius: 16px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    padding: 30px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    min-height: 160px;
+}
+
+.contacto-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+
+.imagen-container {
+    flex-shrink: 0;
+    margin-right: 30px;
+}
+
+
+.imagen-container img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #e0e0e0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.info-container {
+    flex-grow: 1;
+}
+
+
+.nombre {
+    margin: 0 0 10px 0;
+    font-size: 30px;
+    font-weight: 600;
+    color: #333;
+}
+
+.cargo {
+    margin: 0 0 12px 0;
+    font-size: 25px;
+    font-weight: 500;
+    color: #666;
+    font-style: italic;
+}
+
+.tel {
+    margin: 6px 0;
+    font-size: 20px;
+    color: #555;
+}
+
+.tel {
+    color: #0066cc;
+}
+
+.btnagregar{
+    background-color: rgb(169, 70, 250) ;
+    font-size: 20px;
+}
+.btnagregar:hover{
+    background-color: rgb(105, 72, 105) 
+}
+@media (max-width: 768px) {
+    .contacto-card {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .imagen-container {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+    
+    .imagen-container img {
+        width: 140px;
+        height: 140px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .contenedor {
+        max-width: 1200px;
+    }
+    
+    .contacto-card {
+        flex-direction: row;
+    }
+}

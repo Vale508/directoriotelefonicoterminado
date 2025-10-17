@@ -1,0 +1,76 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  height: 100vh;
+  font-family: cursive;
+  background-color: rgb(237, 209, 255);
+}
+
+.nuevo-contacto {
+  max-width: 400px;
+  margin: 60px auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nuevo-contacto-container h2 {
+  color: black;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form-nuevo-contacto label {
+    text-align: center;
+  display: block;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 6px;
+  margin-top: 12px;
+}
+
+.form-nuevo-contacto input {
+  width: 100%;
+  padding: 10px 12px;
+  margin-top: 4px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-family: inherit;
+  font-size: 16px;
+}
+
+.form-nuevo-contacto input::placeholder {
+  font-style: italic;
+  color: #999;
+}
+
+.form-nuevo-contacto button {
+  margin-top: 20px;
+  padding: 12px;
+  width: 100%;
+  background-color: rgb(169, 70, 250) ;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.form-nuevo-contacto button:hover:not(:disabled) {
+  background-color: rgb(105, 72, 105) 
+}
+
+.form-nuevo-contacto button:disabled {
+  background-color: #a1c0f7;
+  cursor: not-allowed;
+}

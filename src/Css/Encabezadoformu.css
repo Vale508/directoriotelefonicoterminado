@@ -1,0 +1,19 @@
+body{
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    height: 100vh;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.arriba{
+    margin-top: 200px;
+    display: flex;
+}
+.logito{
+    width: 30%;
+    margin-top: 8%;
+    margin-left: 20px;
+}

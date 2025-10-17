@@ -1,0 +1,193 @@
+.perfil-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.btn-volver {
+    background: #202020;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-volver:hover {
+    background: #443dac;
+}
+
+.perfil-card {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.perfil-header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.perfil-imagen img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.perfil-info-basica h1 {
+    font-size: 2.5em;
+    margin: 0 0 10px 0;
+    font-weight: 700;
+}
+
+.perfil-info-basica h2 {
+    font-size: 1.3em;
+    margin: 0 0 15px 0;
+    font-weight: 400;
+    opacity: 0.9;
+}
+
+.departamento {
+    font-size: 1.1em;
+    font-weight: 500;
+    margin: 5px 0;
+    opacity: 0.8;
+}
+
+.ubicacion, .experiencia {
+    font-size: 1em;
+    margin: 8px 0;
+    opacity: 0.9;
+}
+
+.perfil-contenido {
+    padding: 40px;
+}
+
+.seccion {
+    margin-bottom: 30px;
+}
+
+.seccion h3 {
+    font-size: 1.4em;
+    color: #333;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 8px;
+}
+
+.botones{
+    width: 20px;
+}
+
+.biografia {
+    font-size: 30px;
+    line-height: 1.6;
+    color: #666;
+    margin-right: 10px;
+}
+
+.opciones {
+     display: flex;
+    flex-direction: column;
+    align-items: center; 
+    gap: 16px;
+    margin-top: 20px;
+}
+
+.opcion {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #ffffff;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.opcion:hover {
+  transform: scale(1.1);    
+}
+.telefono{
+    width: 50px;
+}
+.botonera {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+ justify-content: center;
+}
+
+.botones {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;        
+  border: none;
+  background-color: #eeeeee;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  padding: 0;
+}
+
+.botones:hover {
+  background-color: #8c8ef5;
+  transform: scale(1.1);    
+}
+
+.botones img {
+  width: 24px;
+  height: 24px;
+}
+
+.img1{
+    width: 50px;
+}   
+.btnguardar{
+    background-color: #443dac;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.btnguardar:hover{
+    background-color: #9d96ff;
+}
+@media (max-width: 768px) {
+    .perfil-header {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 20px;
+    }
+    
+    .perfil-imagen img {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .perfil-info-basica h1 {
+        font-size: 2em;
+    }
+    
+    .perfil-contenido {
+        padding: 20px;
+    }
+    
+    .habilidades {
+        justify-content: center;
+    }
+}
