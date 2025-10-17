@@ -19,7 +19,7 @@ function BusquedaContactos() {
     setMensaje('');
 
     try {
-      const respuesta = await fetch(`http://localhost:5000/api/contactos/buscar?query=${encodeURIComponent(query.trim())}`,
+      const respuesta = await fetch(`apidirectoriotelefonicoterminado.vercel.app/api/contactos/buscar?query=${encodeURIComponent(query.trim())}`,
         {
           credentials: 'include',
         }
