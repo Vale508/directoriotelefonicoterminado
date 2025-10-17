@@ -10,7 +10,7 @@ function EncabezadoContainer() {
   const cerrarSesion = async () => {
     try {
       console.log('Intentando cerrar sesión...');
-      const res = await fetch('http://localhost:8080/api/cerrarsesi', {
+      const res = await fetch('apidirectoriotelefonicoterminado.vercel.app/api/cerrarsesi', {
         method: 'POST',
         credentials: 'include', // necesario para enviar cookies de sesión
         headers: {
